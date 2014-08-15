@@ -15,7 +15,7 @@ exclude:
 gems:
   - jekyll-sitemap
 keys:
-  ga: UA-XXXXXXXX-1
+  ga: false
 name: SPIRE Real Estate, LLC
 permalink: pretty
 source: .

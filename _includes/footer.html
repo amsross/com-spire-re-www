@@ -1,1 +1,3 @@
-		{% include google-analytics.html %}
+		{% if site.keys.ga %}
+			{% include google-analytics.html %}
+		{% endif %}
