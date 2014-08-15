@@ -1,0 +1,36 @@
+@import "mixins";
+@import "variables";
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body,
+.container,
+.parent-element {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background-color: @bg-color;
+	-webkit-font-smoothing: antialiased;
+	.parent-element {
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		.element {
+			.img-responsive(block);
+			.img-retina(@logo-file-1x; @logo-file-2x; 100%; auto);
+			height: @logo-height-1x;
+			margin: 0 auto;
+			position: relative;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			width: @logo-width-1x;
+		}
+	}
+}

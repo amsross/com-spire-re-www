@@ -1,0 +1,22 @@
+# GitHub presets
+safe: true
+lsi: false
+
+# custom settings
+author: Matt Ross
+author_email: matt@mattross.io
+description: spire re
+destination: ./_site
+exclude:
+  - package.json
+  - Gruntfile.js
+  - node_modules
+gems:
+  - jekyll-sitemap
+keys:
+  ga: UA-XXXXXXXX-1
+name: SPIRE RE
+permalink: pretty
+source: .
+timezone: America/New_York
+url: http://www.spire-re.com
